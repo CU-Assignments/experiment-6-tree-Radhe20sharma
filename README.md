@@ -1,1 +1,58 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/W4EaMJJJ)
+22BCS15549    Radhe Sharma                                                                                                                     
+                                                                                                                                                                          Java Stream Operations on Large Datasets
+
+Overview
+
+This project demonstrates the usage of Java Streams and Lambda Expressions to efficiently process a large dataset of products. The program performs the following operations:
+
+Grouping Products by Category
+
+Finding the Most Expensive Product in Each Category
+
+Calculating the Average Price of All Products
+
+Technologies Used
+
+Java 8 or later
+
+Java Streams API
+
+Lambda Expressions
+
+Collections Framework
+
+Getting Started
+
+Prerequisites
+
+Ensure you have the following installed:
+
+Java 8+ (Recommended: JDK 11 or later)
+
+A Java IDE (Eclipse, IntelliJ IDEA, or VS Code) or a terminal with javac
+
+Running the Program
+
+Clone or download this repository.
+
+Open the project in your preferred Java IDE or navigate to the folder in a terminal.
+
+Compile the Java file:
+
+javac ProductStreamProcessor.java
+
+Run the program:
+
+java ProductStreamProcessor
+
+Code Explanation
+
+The main file ProductStreamProcessor.java performs the following operations:
+
+Creates a list of Product objects with name, category, and price.
+
+Groups products by category using Collectors.groupingBy().
+
+Finds the most expensive product per category using Collectors.maxBy().
+
+Computes the average price using .mapToDouble().average().
